@@ -1,28 +1,47 @@
+<!DOCTYPE html>
 <html>
-<head>
-    <title>Nicholas Quam</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-		<div class="banner"> 
-			<div class="navbar">
-                <img src="logo.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="second.html">Project One</a></li>
-                    <li><a href="third.html">Project Two</a></li>
-                    <li><a href="#">Project Three</a></li>
-                </ul>
-            </div>
-            
-            <div class="content">
-                <h1>NICHOLAS QUAM</h1>
-                <div>
-                    <a href="https://www.linkedin.com/in/nicholas-quam-2b4363161/" target="_blank" rel="noopener noreferrer">
-                        <button type="button"><span></span>LinkedIn</button>
-                    </a>
-                </div>
-            </div>
-		</div>
-</body>
+    <head>
+        <title>Nicholas Quam | Creative Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">NQ</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="images/shapes.png" id="shapes">
+            <img src="images/nick.png" id="nick">
+            <img src="images/grunge.png" id="grunge">
+            <h2 id="text">Nicholas Quam</h2>
+            <a href="https://www.linkedin.com/in/nicholasquam" target="_blank" rel="noopener noreferrer">
+            <button type="button"><span></span>LinkedIn</button>
+            </a>
+            <img src="images/smoke.png" id="smoke">
+        </section>
+        <div class="sec" id="sec">
+            <h2>Hi, i'm Nick</h2>
+            <p>The quick brown fox jumped over the lazy dog and left him to die all alone sad little dog<br></br>jfakl;sdjfal;skdjf;alksdjf;alksjdf;alksjdf;laksjdfal;skdfj;akldfja;lskdjfa;slkdjf</p>
+        </div>
+        <script>
+            let shapes = document.getElementById('shapes');
+            let nick = document.getElementById('nick');
+            let grunge = document.getElementById('grunge');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let smoke = document.getElementById('smoke');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                shapes.style.left = value * .25 + 'px';
+                nick.style.top = -value * .4 + 'px';
+                grunge.style.top = -value * .1 + 'px';
+                console.log(value);
+                smoke.style.scale = value * 1.1 + 'px';
+            })
+        </script>
+    </body>
 </html>
