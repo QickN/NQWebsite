@@ -37,7 +37,8 @@
             let btn = document.getElementById('btn');
             let smoke = document.getElementById('smoke');
             let hiText = document.getElementById('sec');
-            let name = document.getElementById('text');
+            
+
 
             window.addEventListener('scroll', function(){
                 let value = window.scrollY;
@@ -48,6 +49,7 @@
                 smoke.style.scale = value * 1.1 + 'px';
                 sec.style.top = value * .1 + 'px';
                 text.style.top = -value * .7 + 'px';
+                text.style.fontSize = (value + 45) * 2 + 'px';
             })
         </script>
     </body>
