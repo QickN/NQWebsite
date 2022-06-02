@@ -23,6 +23,7 @@ header
     justify-content: space-between;
     align-items: center;
     z-index: 10000;
+    animation: bounceDown .5s;
 }
 header .logo
 {
@@ -65,7 +66,7 @@ section
     justify-content: center;
     align-items: center;
 }
-section img
+#shapes
 {
     position: absolute;
     top: 0;
@@ -78,6 +79,44 @@ section img
 #nick2
 {
     transform: translateX(-500px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 201%;
+    height: 300%;
+    object-fit: cover;
+    pointer-events: none;
+}
+#smoke
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 201%;
+    height: 300%;
+    object-fit: cover;
+    pointer-events: none;
+}
+#grunge
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 201%;
+    height: 300%;
+    object-fit: cover;
+    pointer-events: none;
+}
+#nick
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 201%;
+    height: 300%;
+    object-fit: cover;
+    pointer-events: none;
+    
 }
 #text
 {
@@ -86,6 +125,30 @@ section img
     white-space: nowrap;
     font-size: 90px;
     z-index: 9;
+    text-shadow: 2px 2px 20px black;
+    animation: bounceUp .5s;
+}
+@keyframes bounceUp{
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+@keyframes bounceDown{
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
 }
 button
 {
