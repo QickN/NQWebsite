@@ -19,10 +19,9 @@
         <section>
             <img src="images/shapes.png" id="shapes">
             <img src="images/nick.png" id="nick2">
-            <img src="images/bg.png" id="nick">
-            <img src="images/grunge.png" id="grunge">
+            <img src="images/down-arrow.png" id="downarrow">
             <h2 id="text">Nicholas Quam</h2>
-            <img src="images/smoke.png" id="smoke">
+            <p id="portfolio">Creative Portfolio</p>
         </section>
         <div class="sec" id="sec">
             <h2>Hi, i'm Nick</h2>
@@ -35,16 +34,11 @@
             let grunge = document.getElementById('grunge');
             let text = document.getElementById('text');
             let text2 = document.getElementById('text2');
-            let btn = document.getElementById('btn');
-            let smoke = document.getElementById('smoke');
-            let hiText = document.getElementById('sec');
-            let tri1 = document.getElementById('tri1');
-            let tri2 = document.getElementById('tri2');
-            let tri3 = document.getElementById('tri3');
+            let hiText = document.getElementsByClassName("sec");
             
             window.addEventListener('scroll', function(){
                 let value = window.scrollY;
-                shapes.style.left = value * .25 + 'px';
+                shapes.style.left = value * .5 + 'px';
                 nick.style.top = -value * .8 + 'px';
                 grunge.style.top = -value * .1 + 'px';
                 console.log(value);
@@ -53,12 +47,10 @@
                 text.style.top = -value * .7 + 'px';
                 text.style.fontSize = (value + 45) * 2 + 'px';
                 text2.style.fontSize = (value + 45) * 2 + 'px';
-                tri1.style.transform = value * 100 + 'rotate(deg)';
+                hiText.style.fontSize = value * 3 + 'px';
                 
 
-                if (value >= 295){
-                    tri1.style.opacity = value *.5;
-                }
+
             })
         </script>
     </body>
