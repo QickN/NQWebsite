@@ -114,7 +114,6 @@ section
 #downarrow
 {
     position: absolute;
-    
     padding-top: 400px;
     transform: scale(20);
     z-index: 10;

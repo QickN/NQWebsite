@@ -30,24 +30,25 @@
         </div>
         <script>
             let shapes = document.getElementById('shapes');
-            let nick = document.getElementById('nick');
-            let grunge = document.getElementById('grunge');
             let text = document.getElementById('text');
-            let text2 = document.getElementById('text2');
-            let hiText = document.getElementsByClassName("sec");
-            
+            let desc = document.getElementById('portfolio')
             window.addEventListener('scroll', function(){
                 let value = window.scrollY;
+                let opac = 1;
+                if (value >= 50 && value <= 75){
+                    opac = .5;
+                } else if (value >= 75 && value <= 100){
+                    opac = .1;
+                } else if (value >= 100){
+                    opac = 0;
+                }
+                console.log(opac);
                 shapes.style.left = value * .5 + 'px';
-                nick.style.top = -value * .8 + 'px';
-                grunge.style.top = -value * .1 + 'px';
+                text.style.fontSize = (value + 180) * .5 + 'px';
+                desc.style.opacity = (opac);
                 console.log(value);
-                smoke.style.scale = value * 1.1 + 'px';
-                sec.style.top = value * .1 + 'px';
-                text.style.top = -value * .7 + 'px';
-                text.style.fontSize = (value + 45) * 2 + 'px';
-                text2.style.fontSize = (value + 45) * 2 + 'px';
-                hiText.style.fontSize = value * 3 + 'px';
+                
+               
                 
 
 
