@@ -67,6 +67,7 @@ section
     align-items: center;
 }
 #shapes
+
 {
     position: absolute;
     top: 0;
@@ -76,7 +77,8 @@ section
     object-fit: cover;
     pointer-events: none;
 }
-#nick2
+
+#nick
 {
     transform: translateX(-500px);
     position: absolute;
@@ -202,7 +204,9 @@ button:hover span{
 }
 .sec p
 {
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: #fff;
-    margin-right: 150px;
+    margin-right: 800px;
+    line-height: 30px;
+    text-shadow: 15px 15px 15px #000000;
 }

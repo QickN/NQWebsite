@@ -61,6 +61,7 @@ header ul li a:hover
 #car2
 {
     position: relative;
+    transform: translateY(61px);
     width: 20%;
     margin-top: 100px;
 }
