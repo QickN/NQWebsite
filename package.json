@@ -1,5 +1,5 @@
 {
-  "name": "nq3dweb",
+  "name": "nqweb",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -11,7 +11,6 @@
     "vite": "^2.9.9"
   },
   "dependencies": {
-    "gh-pages": "^4.0.0",
     "three": "^0.141.0"
   }
 }
