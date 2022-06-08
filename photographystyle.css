@@ -8,60 +8,138 @@
 }
 header
 {
-    position: absolute;
-    top: 0;
-    left: 0;
+    background: rgb(0, 0, 0,.3);
+    color: rgb(0, 0, 0,.3);
+    backdrop-filter: blur(40px);
+    backdrop-filter: saturation(39);
+    position: fixed;
     width: 100%;
-    padding: 30px 100px;
+    padding: 20px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 10000;
-    animation: bounceDown .5s;
+    animation: bounceDown .5s ease;
+    
 }
 header .logo
 {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight: 700;
     text-decoration: none;
     font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 2px;
+    animation: bounceDown 1s ease;
+    
 }
 header ul
 {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: bounceDown3 1s ease;
 }
 header ul li
 {
     list-style: none;
     margin-left: 20px;
+    
 }
 header ul li a
 {
     text-decoration: none;
     padding: 6px 15px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border:2px solid rgb(0, 128, 255,.5);
+    
+    
 }
 header ul li a:hover
 {
-    background:rgb(0, 0, 0);
+    background:rgb(0, 128, 255,.5);
     color: #ffffff;
 }
 #car1
 {
     position: relative;
     width: 40%;
-    margin-top: 100px;
-    margin-left: 100px;
-
+    display: inline-block;
 }
 #car2
 {
     position: relative;
+    display: inline-block;
     transform: translateY(61px);
     width: 20%;
-    margin-top: 100px;
+    top: 0;
+
+}
+@keyframes bounceUp{
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+@keyframes bounceUp2{
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    10%{
+        opacity: .25;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+@keyframes bounceDown{
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+@keyframes bounceDown2{
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    10% {
+        opacity: .25;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+@keyframes bounceDown3{
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    20% {
+        opacity: .25;
+        transform: translateY(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
 }
