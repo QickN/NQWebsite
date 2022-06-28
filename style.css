@@ -67,46 +67,43 @@ header ul li a:hover
 }
 section
 {
+    display: flex;
+    justify-content: left;
+    align-items: left;
     position: fixed;
     width: 100%;
     height: 100vh;
     padding-top: 100px;
-    justify-content: left;
-    align-items: left;
 }
 #text
 {
-    display: inline-block;
-    padding-top: 30vh;
-    padding-left: 11.5vh;
     position: fixed;
+    text-align: left;
+    padding-top: 32vh;
+    padding-left: 10%;
     color: rgb(255, 255, 255);
     font-size: 90px;
-    z-index: 9;
     animation: bounceUp 1s ease;
 }
 #portfolio
 {
-    display: inline-block;
-    padding-left: 11.5vh;
+    position: fixed;
+    text-align: left;
+    padding-top: 42vh;
+    padding-left: 10%;
     color: rgb(255, 255, 255);
     font-size: 50px;
-    padding-top: 40vh;
-    position: fixed;
     animation: bounceUp2 1s ease; 
 }
-.line hr 
+.button
 {
-    position: fixed;
-    margin-top: 48vh;
-    margin-left: 11.7vh;
-    height: 7px;
-    width: 100px;
-    background-color: white;
-    animation: bounceUp2 1s ease;
-    
+    position: relative;
+    width: 10px;
+    height: 10px;
+    padding-left: 10vh;
 }
 #circle {
+    position: fixed;
     background: lightblue;
     border-radius: 50%;
     align-items: center;
@@ -116,6 +113,7 @@ section
     animation: slowlyMove 30s infinite;
 }
 #circleWhite {
+    position: fixed;
     background: red;
     border-radius: 50%;
     margin-left: 100vw;
