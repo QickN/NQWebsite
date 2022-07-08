@@ -112,6 +112,7 @@ header ul li a:hover
 }
 #carazwide:hover, #caraztrunk:hover, #WRXPic12:hover, #WRXPic2:hover, #WRXPic7:hover, #WRXPic1055:hover, #WRXPic1057:hover {
     transform: scale(1.03);
+    border-radius: 25px;
 }
 
 
