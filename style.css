@@ -107,7 +107,7 @@ section
     background: lightblue;
     border-radius: 50%;
     align-items: center;
-    filter: blur(100000px);
+    filter: blur(500px);
     width: 500px;
     height: 500px;
     animation: slowlyMove 30s infinite;
@@ -119,7 +119,7 @@ section
     margin-left: 100vw;
     width: 500px;
     height: 500px;
-    filter: blur(1000px);
+    filter: blur(400px);
     animation: slowlyMove2 30s ease infinite;
     
 }
