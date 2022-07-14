@@ -5,7 +5,7 @@
     box-sizing: border-box;
     scroll-behavior: auto;
     font-family: 'Inter', sans-serif;
-    
+   
 }
 header
 {
@@ -62,8 +62,12 @@ header ul li a:hover
 }
 .gallery
 {
+    justify-content: center;
+    align-items: center;
     padding-top: 100px;
-    padding-left: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    position: relative;
 }
 #carazwide
 {
@@ -111,7 +115,7 @@ header ul li a:hover
     transition: filter .2s ease;
 }
 #carazwide:hover, #caraztrunk:hover, #WRXPic12:hover, #WRXPic2:hover, #WRXPic7:hover, #WRXPic1055:hover, #WRXPic1057:hover {
-    transform: scale(1.03);
+    transform: scale(1.1);
     border-radius: 25px;
 }
 
